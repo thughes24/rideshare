@@ -1,0 +1,15 @@
+%nav.navbar.navr
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#main-nav-collapse" aria-expanded="false")
+        %span.sr-only Toggle Navigation
+        -3.times do
+          %span.icon-bar.dark-gray
+      =link_to "Ride Share", '/ui', class: "navbar-brand"
+
+    #main-nav-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.btn.btn-default(href="#") Catch A Ride
+        %li
+          %a.btn.btn-default(href="#") Host a Ride

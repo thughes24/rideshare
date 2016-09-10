@@ -16,3 +16,86 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import "*";
+
+body, .gray {
+  background-color: #EDEFED;
+}
+.bg-white {
+  background-color: #FFFFFF;
+}
+.test {
+  border: 1px dotted black;
+}
+
+.bold {
+  font-weight: bold;
+}
+.dark-gray {
+  background-color:#383838;
+  color:white;
+}
+.comparison {
+  th, td {
+    border-bottom: 1px solid #ddd;
+    padding:30px;
+    font-size:140%;
+  }
+  margin:0 auto;
+}
+
+.fill-div {
+  width:100%;
+  height:100%;
+}
+
+.no-left-padding {
+  padding-left:0 !important;
+}
+.no-right-padding {
+  padding-right:0 !important;
+}
+@media (max-width : 992px) {
+    .no-left-padding, .no-right-padding {
+        padding:0 !important;
+    }
+}
+.footer {
+  width:100%;
+  height:60px;
+  background:#242424;
+  border-top:4px solid #F0F0F0;
+  line-height:60px;
+  margin:0;
+  padding:0;
+  color:white;
+  font-weight:bold;
+  overflow:hidden;
+}
+.background {
+  background:url('/background-frontpage.jpeg');
+  background-size:cover;
+  background-position: center;
+}
+.navr {
+  padding-top:10px;
+  position:absolute;
+  width:100%;
+}
+@media (min-width:1300px) {
+  .background {
+    background-position-y:-200px;
+    background-repeat:no-repeat;
+  }
+}
+@media (min-width:1400px) {
+  .background {
+    background-position-y:-250px;
+    background-repeat:no-repeat;
+  }
+}
+@media (min-width:1726px) {
+  .background {
+    background-position-y:-400px;
+    background-repeat:no-repeat;
+  }
+}
